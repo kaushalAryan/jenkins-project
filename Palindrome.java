@@ -4,7 +4,7 @@
 
 public class Palindrome {
 
-	public static void main(String[] args)
+	public static void main(int[] args)
 	{
 		Scanner sc=new Scanner(System.in);
 		System.out.println("enter the value");
@@ -15,11 +15,11 @@ public class Palindrome {
 		int  temp;
 		temp=n;
 		
-		while(n>0)
+		while(args[0]>0)
 		{
-			rem=n%10;
+			rem=args[0]%10;
 			sum=sum*10+rem;
-			n=n/10;
+			args[0]=args[0]/10;
 			
 		}
 		if(temp==sum)
